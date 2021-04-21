@@ -1,11 +1,18 @@
 body {
-  font-family: "Mukta", serif;
-  font-size: 28px;
+  font-size: 36px;
+}
+
+header, article {
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6, p, li {
   margin: 0;
-  line-height: .9;
+  line-height: 1.2;
 }
 
 ul {
@@ -63,6 +70,14 @@ main > ul li {
 }
 main > ul {
   text-align: center;
+}
+
+.round h4 {
+  font-size: 3rem;
+}
+
+.round h4 {
+  font-size: 3rem;
 }
 
 .presentation {
