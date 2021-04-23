@@ -14,12 +14,18 @@
   <script type="module" src="js/finals.mjs"></script>
   <script type="module" src="js/client.mjs"></script>
   <style>
-    /* .presentation {
+    /* body {
+      margin-bottom: 50vh;
+    }
+    .presentation {
       margin-bottom: 6em;
       min-height: 100vh;
     }
-    main > h3 {
+    h3.rounds {
       margin: 25vh 0;
+    }
+    h3.open {
+      margin-top: 50vh;
     } */
   </style>
 </head>
@@ -47,19 +53,19 @@
         <li><em>Technology</em>: HTML/CSS/JS, Node/Express, MongoDB/Mongoose, WordPress/MySQL</li>
         <li><em>Extras</em>: Image processing, design principles, social media, contracting</li>
       </ul>
-      <h3>10am: Round 1 Presentations</h3>
+      <h3 class="rounds open">10am: Round 1 Presentations</h3>
       <section id="round1">
         <!-- Dynamic Content Here-->
       </section>
-      <h3>11:15am: Round 2 Presentations</h3>
+      <h3 class="rounds">11am: Round 2 Presentations</h3>
       <section id="round2">
         <!-- Dynamic Content Here-->
       </section>
-      <h3>12:30am: Round 3 Presentations</h3>
+      <h3 class="rounds">12pm: Round 3 Presentations</h3>
       <section id="round3">
         <!-- Dynamic Content Here-->
       </section>
-      <h3>End of Presentations!</h3>
+      <h3 class="rounds">End of Presentations!</h3>
     </main>
   </div>
   <template id="presentation">
