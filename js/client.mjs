@@ -1,6 +1,6 @@
 import { round1 , round2, round3 } from "./finals.mjs";
-import {roster} from "../../roster/js/data/roster.mjs";
-import linkList from "../../roster/js/linklist.mjs";
+import {roster} from "../roster/js/data/roster.mjs";
+import linkList from "../roster/js/linklist.mjs";
 
 const rounds = [
   {
