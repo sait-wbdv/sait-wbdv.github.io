@@ -42,19 +42,19 @@ function setCard(student) {
   student.badges?.forEach(badge => {
     if (badge.name) {
       if (badge.name === 'mvp') {
-        badges += `<li><img src="roster/images/icons/mvp.svg" alt="${badge.name} Icon" title="${badge.name}"></a></li>`;
+        badges += `<li><img src="roster/images/icons/mvp.svg" alt="Most Valuable Programmer Icon" title="Most Valuable Programmer"></a></li>`;
       } else if (badge.name === 'coach') {
-        badges += `<li><img src="roster/images/icons/coach-of-the-year.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+        badges += `<li><img src="roster/images/icons/coach-of-the-year.svg" alt="Coach fo the Year Icon" title="Coach fo the Year"></li>`;
       } else if (badge.name === 'special-teams') {
-        badges += `<li><img src="roster/images/icons/special-teams.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+        badges += `<li><img src="roster/images/icons/special-teams.svg" alt="Special Teams Icon" title="Special Teams"></li>`;
       } else if (badge.name === 'attendance') {
-        badges += `<li><img src="roster/images/icons/perfect-attendance.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+        badges += `<li><img src="roster/images/icons/perfect-attendance.svg" alt="Perfect Attendance Icon" title="Perfect Attendance"></li>`;
       } else if (badge.name === 'early-riser') {
-        badges += `<li><img src="roster/images/icons/early-riser.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+        badges += `<li><img src="roster/images/icons/early-riser.svg" alt="Early Riser Icon" title="Early Riser"></li>`;
       } else if (badge.name === 'code-warrior') {
-        badges += `<li><img src="roster/images/icons/code-warrior.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+        badges += `<li><img src="roster/images/icons/code-warrior.svg" alt="Code Warrior Icon" title="Code Warrior"></li>`;
       } else if (badge.name === 'plus-one') {
-        badges += `<li><img src="roster/images/icons/plus-one.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+        badges += `<li><img src="roster/images/icons/plus-one.svg" alt="Plus One Icon" title="Plus One"></li>`;
       }
     }
   });
