@@ -59,7 +59,7 @@ main {
 main > h3 {
   font-size: 3rem;
   width: max-content;
-  margin: 3rem auto;
+  margin: 7rem 5rem auto;
   color: #005EB8;
   font-variant: small-caps;
 }
@@ -75,12 +75,11 @@ main > h3 {
 }
 
 .presentation {
-  margin-bottom: 6em;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 5rem auto;
 }
 .presentation header {
   margin-bottom: 2rem;
