@@ -53,7 +53,7 @@ const round2 = [
   },
   {
     name: 'Ed and Michael',
-    title: 'Greensock-apolooza',
+    title: 'An Intro to Greensock',
     members: [
       'Ed Irvine',
       'Michael Hintz'
