@@ -52,10 +52,6 @@ const round2 = [
     title: 'Media Tracker'
   },
   {
-    name: 'Shivani Patel',
-    title: 'Business WP website'
-  },
-  {
     name: 'Ed and Michael',
     title: 'Greensock-apolooza',
     members: [
