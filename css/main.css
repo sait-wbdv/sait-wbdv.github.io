@@ -2,9 +2,15 @@ body {
   font-size: 28px;
 }
 
-h1, h2, h3, h4, h5, h6, p, li {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
-  line-height: .9;
+  line-height: 1;
+  text-align: center;
+}
+
+li {
+  margin: 0;
+  line-height: 1;
   text-align: center;
 }
 
@@ -57,14 +63,13 @@ main > h3 {
   color: #005EB8;
   font-variant: small-caps;
 }
-main > ul li {
-  font-size: 1.5em;
-  margin: 1em;
-}
-main > ul {
-  text-align: center;
-}
 
+#overview > ul {
+  text-align: left;
+}
+#overview li {
+  font-size: 1.5rem;
+}
 .presentation {
   margin-bottom: 6em;
   min-height: 100vh;
