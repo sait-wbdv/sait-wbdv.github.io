@@ -1,5 +1,6 @@
 import { round1 , round2, round3 } from "./finals.mjs";
 import {roster} from "../../roster/js/data/roster.mjs";
+import linkList from "../../roster/js/linklist.mjs";
 
 const rounds = [
   {
@@ -37,64 +38,40 @@ function setCard(student) {
   image.setAttribute('alt', `${student.label} Profile Pic`);
 
   // Trophies
-  // student.trophies = '';
-  // student.achievements.forEach(achievement => {
-  //   if (achievement.trophy) {
-  //     if (achievement.name === 'MVP') {
-  //       student.trophies += `<li><img src="assets/images/mvp.svg" alt="${achievement.name} Icon" title="${achievement.name}"></a></li>`;
-  //     } else if (achievement.name === 'Coach of the Year') {
-  //       student.trophies += `<li><img src="assets/images/creative.svg" alt="${achievement.name} Icon" title="${achievement.name}"></li>`;
-  //     } else if (achievement.name === 'Perfect Attendance') {
-  //       student.trophies += `<li><img src="assets/images/perfect-attendance.svg" alt="${achievement.name} Icon" title="${achievement.name}"></li>`;
-  //     } else if (achievement.name === 'Coach Plus One') {
-  //       student.trophies += `<li><img src="assets/images/plus-1.svg" alt="${achievement.name} Icon" title="${achievement.name}"></li>`;
-  //     } else if (achievement.name === 'MVP Plus One') {
-  //       student.trophies += `<li><img src="assets/images/plus-1.svg" alt="${achievement.name} Icon" title="${achievement.name}"></li>`;
-  //     }
-  //   }
-  // });
-  // if (student.trophies) {
-  //   card.querySelector('.trophies').innerHTML = student.trophies;
-  // } else {
-  //   card.querySelector('.trophies').remove();
-  // }
-  
-  // Skills
-  // if (student.skills.length > 0) {
-  //   console.log(Boolean(student.skills));
-  //   card.querySelector('.skills').innerHTML = `${student.skills.join(', ')}`;
-  // } else {
-  //   card.querySelector('.skills').remove();
-  // }
+  let badges = '';
+  student.badges?.forEach(badge => {
+    if (badge.name) {
+      if (badge.name === 'mvp') {
+        badges += `<li><img src="roster/images/icons/mvp.svg" alt="${badge.name} Icon" title="${badge.name}"></a></li>`;
+      } else if (badge.name === 'coach') {
+        badges += `<li><img src="roster/images/icons/coach-of-the-year.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+      } else if (badge.name === 'special-teams') {
+        badges += `<li><img src="roster/images/icons/special-teams.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+      } else if (badge.name === 'attendance') {
+        badges += `<li><img src="roster/images/icons/perfect-attendance.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+      } else if (badge.name === 'early-riser') {
+        badges += `<li><img src="roster/images/icons/early-riser.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+      } else if (badge.name === 'code-warrior') {
+        badges += `<li><img src="roster/images/icons/code-warrior.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+      } else if (badge.name === 'plus-one') {
+        badges += `<li><img src="roster/images/icons/plus-one.svg" alt="${badge.name} Icon" title="${badge.name}"></li>`;
+      }
+    }
+  });
+  if (badges) {
+    card.querySelector('.badges').innerHTML = `<ul>${badges}</ul>`;
+  } else {
+    card.querySelector('.badges').remove();
+  }
 
   // Social Links
-  // student.socials = '';
-  // student.links.forEach(link => {
-  //   if (link.name === 'github') {
-  //     if (link.username) {
-  //       student.socials += `<li class="github"><a href="${link.username}" target="_blank"><i class="fab fa-github"></i></a></li>`;
-  //     }
-  //   } else if (link.name === 'codepen') {
-  //     if (link.username) {
-  //       student.socials += `<li class="codepen"><a href="${link.username}" target="_blank"><i class="fab fa-codepen"></i></a></li>`;
-  //     }
-  //   } else if (link.name === 'website') {
-  //     if (link.link) {
-  //       student.socials += `<li class="website"><a href="${link.link}" target="_blank"><i class="fas fa-home"></i></a></li>`;
-  //     }
-  //   } else if (link.name === 'linkedin') {
-  //     if (link.link) {
-  //       student.socials += `<li class="linkedin"><a href="${link.link}" target="_blank"><i class="fab fa-linkedin"></i></a></li>`;
-  //     }
-  //   } else {
-  //     console.warn('unknown social');
-  //   }
-  // });
-  // if (student.socials) {
-  //   card.querySelector('.socials').innerHTML = student.socials;
-  // } else {
-  //   card.querySelector('.socials').remove();
-  // }
+  student.social = linkList(student.links);
+
+  if (student.social) {
+    card.querySelector('.social').innerHTML = student.social;
+  } else {
+    card.querySelector('.social').remove();
+  }
   return card;
 }
 
@@ -128,6 +105,9 @@ rounds.forEach((round) => {
       
     } else if (typeof speaker.members !== 'undefined') {
         // Group presentation
+        if (speaker.name) {
+          presentation.querySelector('header').innerHTML += `<h5>${speaker.name}</h5>`;
+        }
         presentation.querySelector('ul').innerHTML = '';
         presentation.querySelector('ul').classList.add('group');
         speaker.members.forEach((member) => {

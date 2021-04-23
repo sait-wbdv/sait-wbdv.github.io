@@ -33,7 +33,7 @@ const round1 = [
 const round2 = [
   {
     name: 'Norvillie Villaruel',
-    title: 'Async life return await success in life;'
+    title: 'Machine learning with hardware integration'
   },
   {
     name: 'Swapna Sama',
