@@ -61,7 +61,7 @@ function setCard(student) {
   if (badges) {
     card.querySelector('.badges').innerHTML = `<ul>${badges}</ul>`;
   } else {
-    card.querySelector('.badges').remove();
+    card.querySelector('.badges').innerHTML = "<ul></ul>";
   }
 
   // Social Links
