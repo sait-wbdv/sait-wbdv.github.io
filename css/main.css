@@ -1,5 +1,5 @@
 body {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -11,7 +11,6 @@ h1, h2, h3, h4, h5, h6, p {
 li {
   margin: 0;
   line-height: 1;
-  text-align: center;
 }
 
 ul {
@@ -22,6 +21,7 @@ ul {
 .page-wrapper {
   max-width: 70ch;
   margin: auto;
+  padding: 1rem;
 }
 
 .page-wrapper > header {
@@ -57,19 +57,23 @@ main {
 }
 
 main > h3 {
-  font-size: 4rem;
+  font-size: 3rem;
   width: max-content;
-  margin: 5rem auto;
+  margin: 3rem auto;
   color: #005EB8;
   font-variant: small-caps;
 }
 
-#overview > ul {
+.overview {
   text-align: left;
+  max-width: 50ch;
 }
-#overview li {
-  font-size: 1.5rem;
+.overview li {
+  font-size: 2rem;
+  line-height: 1.5;
+  list-style: initial;
 }
+
 .presentation {
   margin-bottom: 6em;
   min-height: 100vh;
@@ -87,13 +91,13 @@ main > h3 {
 }
 
 .presentation header h4 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin: 1rem;
 }
 
 .presentation header h5 {
   font-style: italic;
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 figure {
@@ -104,7 +108,7 @@ figure {
   align-items: center;
   justify-content: center;
 
-  min-height: 15em;
+  min-height: 12em;
 
   border: 1px solid #666;
   border-radius: 4rem;
@@ -118,8 +122,8 @@ figure > img {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   
-  width: 8em;
-  height: 8em;
+  width: 6em;
+  height: 6em;
   margin: auto;
 
   border-radius: 50%;
@@ -136,7 +140,7 @@ figcaption {
 }
 
 figcaption header {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   color: #666;
   width: max-content;
   margin: auto;
