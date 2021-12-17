@@ -1,5 +1,5 @@
-import { round1 , round2, round3 } from "./finals-w21.js";
-import {roster} from "../roster/js/data/roster-w21.js";
+import { round1 , round2 } from "./finals-f21.js";
+import {roster} from "../roster/js/data/roster-f21.js";
 import linkList from "../roster/js/linklist.js";
 
 const rounds = [
@@ -10,10 +10,6 @@ const rounds = [
   {
     speakers: round2,
     container: 'round2'
-  },
-  {
-    speakers: round3,
-    container: 'round3'
   }
 ];
 
@@ -33,7 +29,7 @@ function setCard(student) {
   const image = card.querySelector('img');
 
   // Set image src
-  image.setAttribute('src', `roster/images/students/w21/${student.avatar}`);
+  image.setAttribute('src', `roster/images/students/f21/${student.avatar}`);
 
   image.setAttribute('alt', `${student.label} Profile Pic`);
 
