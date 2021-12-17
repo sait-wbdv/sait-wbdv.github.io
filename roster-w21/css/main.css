@@ -1,0 +1,26 @@
+.wrapper > header {
+  font-family: 'Roboto Mono', monospace;
+  background-color: black;
+  padding: 1rem;
+}
+
+.roster-logo {
+  color: #02F007;
+}
+
+span{
+  animation: blink 1200ms infinite
+}
+
+span.space{
+  letter-spacing: -8px;
+}
+
+@keyframes blink{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
