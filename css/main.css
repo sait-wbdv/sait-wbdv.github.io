@@ -50,7 +50,7 @@ ul {
 
 main {
   margin: auto;
-  max-width: 60ch;
+  max-width: 62ch;
   
   display: flex;
   flex-direction: column;
@@ -110,7 +110,7 @@ figure {
 
   min-width: 50ch;
   min-height: 12em;
-  padding: 0 1rem;
+  padding: 1rem;
 
   border: 1px solid #bbb;
   border-radius: 4rem;
@@ -124,8 +124,8 @@ figure > img {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
   
-  width: 7em;
-  height: 7em;
+  width: 8em;
+  height: 8em;
   margin: auto;
 
   border-radius: 50%;
@@ -151,13 +151,14 @@ figcaption header {
   line-height: 1.2;
   color: #666;
   width: max-content;
-  margin: 0;
+  margin-top: .5rem;
   text-align: center;
 }
 
 figcaption p {
-  margin-bottom: 0.75rem;
-  margin: 0;
+  margin: 1.25rem auto;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
 }
 
 .social ul, .badges ul {
@@ -178,3 +179,18 @@ figcaption p {
 .social li a {
   color: navy;
 }
+
+.group figure > img {
+  width: 7em;
+  height: 7em;
+}
+
+.group figure {
+  padding: 0 1rem;
+}
+
+.group figcaption p {
+  margin-bottom: 0.75rem;
+  margin: 0;
+}
+

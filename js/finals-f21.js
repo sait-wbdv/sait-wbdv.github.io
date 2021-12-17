@@ -53,7 +53,7 @@ const round2 = [
   },
   {
     name: 'Christopher Barber',
-    title: 'Psychological Self Improvement website'
+    title: 'Psychological Self Improvement Website'
   }
 ];
 

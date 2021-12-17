@@ -4,6 +4,9 @@
 const selectIcon = (label) => {
   let labelHTML;
   switch (label.toLowerCase()) {
+    case "homepage":
+      labelHTML = '<i class="fas fa-home"></i>';
+      break;
     case "github":
       labelHTML = '<i class="fab fa-github"></i>';
       break;

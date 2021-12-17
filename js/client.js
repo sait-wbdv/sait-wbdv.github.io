@@ -20,7 +20,7 @@ function setCard(student) {
   // Name, tagline
   card.querySelector('header').innerHTML = student.label;
   if (student.tagline) {
-    card.querySelector('p').innerText = student.tagline;
+    card.querySelector('p').innerHTML = student.tagline;
   } else {
     card.querySelector('p').remove();
   }
@@ -40,9 +40,11 @@ function setCard(student) {
       if (badge.name === 'mvp') {
         badges += `<li><img src="roster/images/icons/mvp.svg" alt="Most Valuable Programmer Icon" title="Most Valuable Programmer"></a></li>`;
       } else if (badge.name === 'coach') {
-        badges += `<li><img src="roster/images/icons/coach-of-the-year.svg" alt="Coach fo the Year Icon" title="Coach fo the Year"></li>`;
+        badges += `<li><img src="roster/images/icons/coach-of-the-year.svg" alt="Coach fo the Year Icon" title="Coach of the Year"></li>`;
       } else if (badge.name === 'special-teams') {
         badges += `<li><img src="roster/images/icons/special-teams.svg" alt="Special Teams Icon" title="Special Teams"></li>`;
+      } else if (badge.name === 'last-to-leave') {
+        badges += `<li><img src="roster/images/icons/last-to-leave.svg" alt="Last to Leave Icon" title="Last to Leave"></li>`;
       } else if (badge.name === 'attendance') {
         badges += `<li><img src="roster/images/icons/perfect-attendance.svg" alt="Perfect Attendance Icon" title="Perfect Attendance"></li>`;
       } else if (badge.name === 'early-riser') {

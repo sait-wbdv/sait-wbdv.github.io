@@ -43,7 +43,7 @@ export const roster = [
   },
   {
     label: "Fesal Badday",
-    tagline: "Junior Web Developer – Go JavaScript || Go Home",
+    tagline: "Junior Web Developer<br>Go JavaScript || Go Home",
     avatar: "fesal.webp",
     links: [
       {
@@ -149,7 +149,7 @@ export const roster = [
   },
   {
     label: "David Ha",
-    tagline: null,
+    tagline: "Frontend developer & designer!",
     avatar: "david.jpg",
     links: [
       {
