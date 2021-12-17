@@ -1,6 +1,6 @@
-import { round1 , round2, round3 } from "./finals.mjs";
-import {roster} from "../roster/js/data/roster.mjs";
-import linkList from "../roster/js/linklist.mjs";
+import { round1 , round2, round3 } from "./finals-w21.js";
+import {roster} from "../roster/js/data/roster-w21.js";
+import linkList from "../roster/js/linklist.js";
 
 const rounds = [
   {
@@ -33,7 +33,7 @@ function setCard(student) {
   const image = card.querySelector('img');
 
   // Set image src
-  image.setAttribute('src', `roster/images/students/${student.avatar}`);
+  image.setAttribute('src', `roster/images/students/w21/${student.avatar}`);
 
   image.setAttribute('alt', `${student.label} Profile Pic`);
 
