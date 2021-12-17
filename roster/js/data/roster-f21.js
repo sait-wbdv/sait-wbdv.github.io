@@ -191,16 +191,16 @@ export const roster = [
         link: "https://github.com/Hyeju1996"
       },
       {
+        label: "codepen",
+        link: "https://codepen.io/your-work"
+      },
+      {
         label: "linkedin",
         link: "https://www.linkedin.com/in/hyeju-hong-1b43aa221/"
       },
       {
         label: "email",
         link: "hyeju5891@gmail.com"
-      },
-      {
-        label: "codepen",
-        link: "https://codepen.io/your-work"
       }
     ],
     badges: [
@@ -225,12 +225,12 @@ export const roster = [
         link: "https://github.com/Raj-Hunjan"
       },
       {
-        label: "linkedin",
-        link: "https://www.linkedin.com/in/raj-hunjan-79b080228/"
-      },
-      {
         label: "codepen",
         link: "https://codepen.io/rajhunjann"
+      },
+      {
+        label: "linkedin",
+        link: "https://www.linkedin.com/in/raj-hunjan-79b080228/"
       }
     ],
     badges: [
@@ -315,12 +315,12 @@ export const roster = [
         link: "https://github.com/aeoyu"
       },
       {
-        label: "email",
-        link: "filoraa@outlook.com"
-      },
-      {
         label: "codepen",
         link: "https://codepen.io/aeoyu"
+      },
+      {
+        label: "email",
+        link: "filoraa@outlook.com"
       }
     ],
     badges: [
@@ -339,16 +339,16 @@ export const roster = [
         link: "https://github.com/Icahpv"
       },
       {
-        label: "email",
-        link: "Icah.doherty.vega@gmail.com"
-      },
-      {
         label: "linkedin",
         link: "https://www.linkedin.com/in/icahpv/"
       },
       {
         label: "instagram",
         link: "https://www.instagram.com/icedvega/"
+      },
+      {
+        label: "email",
+        link: "Icah.doherty.vega@gmail.com"
       }
     ],
     badges: [
