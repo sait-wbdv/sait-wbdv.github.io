@@ -31,6 +31,10 @@ const round2 = [
     title: '"Say Cheese!" - AshLens Photography Website'
   },
   {
+    name: 'Stephan Taylor',
+  title: 'Client Website - Breathdoula'
+  },
+  {
     name: 'Eddie A',
     title: 'Fortune Studios'
   },
@@ -41,10 +45,6 @@ const round2 = [
   {
     name: 'Edgar Caballero',
     title: 'Portfolio Website'
-  },
-  {
-    name: 'Stephan Taylor',
-  title: 'Client Website - Breathdoula'
   },
 
 ];
