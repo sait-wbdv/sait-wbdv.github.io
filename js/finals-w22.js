@@ -27,6 +27,10 @@ const round1 = [
 
 const round2 = [
   {
+    name: 'Bryan Velasco',
+    title: '"Say Cheese!" - AshLens Photography Website'
+  },
+  {
     name: 'Eddie A',
     title: 'Fortune Studios'
   },
@@ -35,17 +39,14 @@ const round2 = [
     title: 'Portfolio Presentation'
   },
   {
-    name: 'Bryan Velasco',
-    title: '"Say Cheese!" - AshLens Photography Website'
+    name: 'Edgar Caballero',
+    title: 'Portfolio Website'
   },
   {
     name: 'Stephan Taylor',
-    title: 'Client Website - Breathdoula'
+  title: 'Client Website - Breathdoula'
   },
-  {
-    name: 'Edgar Caballero',
-    title: 'Portfolio Website'
-  }
+
 ];
 
 export { round1, round2 };
