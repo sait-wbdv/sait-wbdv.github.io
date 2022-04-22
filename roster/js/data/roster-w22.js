@@ -1,7 +1,7 @@
 export const roster = [
   {
     label: "Tess Hutson",
-    tagline: "The <!—- hello -—> world is your oyster. 🦪 [UX / UI design enthusiast.]",
+    tagline: "The hello world is your oyster. 🦪 [UX / UI design enthusiast.]",
     avatar: "tess.png",
     links: [
       {
@@ -19,7 +19,7 @@ export const roster = [
     ]
   },
   {
-    label: "Eddie A",
+    label: "Ed Adeagbo",
     tagline: "Junior Developer by day, and night.",
     avatar: "eddie.jpg",
     links: [
@@ -59,7 +59,7 @@ export const roster = [
   },
   {
     label: "Mahalakshmi Seenivasan",
-    tagline: "past: Graphic Designer present: Web Developer, Good Cook & Mom of 2 Boys",
+    tagline: "past: Graphic Designer <br>present: Web Developer, Good Cook & Mom of 2 Boys",
     avatar: "maha.jpg",
     links: [
       {
