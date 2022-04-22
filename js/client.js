@@ -1,5 +1,5 @@
-import { round1 , round2 } from "./finals-f21.js";
-import {roster} from "../roster/js/data/roster-f21.js";
+import { round1 , round2 } from "./finals-w22.js";
+import {roster} from "../roster/js/data/roster-w22.js";
 import linkList from "../roster/js/linklist.js";
 
 const rounds = [
@@ -29,7 +29,7 @@ function setCard(student) {
   const image = card.querySelector('img');
 
   // Set image src
-  image.setAttribute('src', `roster/images/students/f21/${student.avatar}`);
+  image.setAttribute('src', `roster/images/students/w22/${student.avatar}`);
 
   image.setAttribute('alt', `${student.label} Profile Pic`);
 
@@ -41,16 +41,22 @@ function setCard(student) {
         badges += `<li><img src="roster/images/icons/mvp.svg" alt="Most Valuable Programmer Icon" title="Most Valuable Programmer"></a></li>`;
       } else if (badge.name === 'coach') {
         badges += `<li><img src="roster/images/icons/coach-of-the-year.svg" alt="Coach fo the Year Icon" title="Coach of the Year"></li>`;
+      } else if (badge.name === 'cleric') {
+        badges += `<li><img src="roster/images/icons/cleric.svg" alt="Cleric Icon" title="Cleric Trophy"></li>`;
+      } else if (badge.name === 'ranger') {
+        badges += `<li><img src="roster/images/icons/ranger.svg" alt="Ranger Icon" title="Ranger Trophy"></li>`;
+      } else if (badge.name === 'paladin') {
+        badges += `<li><img src="roster/images/icons/paladin.svg" alt="Paladin Icon" title="Paladin Trophy"></li>`;
       } else if (badge.name === 'special-teams') {
         badges += `<li><img src="roster/images/icons/special-teams.svg" alt="Special Teams Icon" title="Special Teams"></li>`;
       } else if (badge.name === 'last-to-leave') {
         badges += `<li><img src="roster/images/icons/last-to-leave.svg" alt="Last to Leave Icon" title="Last to Leave"></li>`;
-      } else if (badge.name === 'attendance') {
+      } else if (badge.name === 'perfect-attendance') {
         badges += `<li><img src="roster/images/icons/perfect-attendance.svg" alt="Perfect Attendance Icon" title="Perfect Attendance"></li>`;
       } else if (badge.name === 'early-riser') {
         badges += `<li><img src="roster/images/icons/early-riser.svg" alt="Early Riser Icon" title="Early Riser"></li>`;
       } else if (badge.name === 'code-warrior') {
-        badges += `<li><img src="roster/images/icons/code-warrior.svg" alt="Code Warrior Icon" title="Code Warrior"></li>`;
+        badges += `<li><img src="roster/images/icons/code-branch.svg" alt="Code Warrior Icon" title="Code Warrior"></li>`;
       } else if (badge.name === 'plus-one') {
         badges += `<li><img src="roster/images/icons/plus-one.svg" alt="Plus One Icon" title="Plus One"></li>`;
       }

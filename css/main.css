@@ -74,6 +74,10 @@ main > h3 {
   list-style: initial;
 }
 
+.overview ul {
+  padding-left: 2.5rem;
+}
+
 .presentation {
   display: flex;
   align-items: center;
@@ -126,6 +130,7 @@ figure > img {
   width: 8em;
   height: 8em;
   margin: auto;
+  object-fit: cover;
 
   border-radius: 50%;
 }
