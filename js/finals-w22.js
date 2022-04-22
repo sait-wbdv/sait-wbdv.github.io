@@ -35,7 +35,7 @@ const round2 = [
   title: 'Client Website - Breathdoula'
   },
   {
-    name: 'Eddie A',
+    name: 'Ed Adeagbo',
     title: 'Fortune Studios'
   },
   {
